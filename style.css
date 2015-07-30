@@ -1,10 +1,10 @@
 @font-face {
     font-family: Lato-Light;
-    src: url(f/Lato-Light.ttf);
+    src: url(f\Lato-Light.ttf);
 }
 @font-face {
     font-family: Lato-Hairline;
-    src: url(f/Lato-Hairline.ttf);
+    src: url(f\Lato-Hairline.ttf);
 }
 
 body{
@@ -101,7 +101,7 @@ padding-bottom: 50px;
 #services h1{
     font-family: Lato-Hairline, sans-serif;
     font-style: normal;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 #services p:first-child{     /*Стилі заголовку*/
     border-top: 2px solid #39ca87;
