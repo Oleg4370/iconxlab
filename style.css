@@ -1,0 +1,648 @@
+@font-face {
+    font-family: Lato-Light;
+    src: url(f/Lato-Light.ttf);
+}
+@font-face {
+    font-family: Lato-Hairline;
+    src: url(f/Lato-Hairline.ttf);
+}
+
+body{
+    margin: 0 auto;
+    min-width: 1024px;
+    max-width: 1400px
+}
+            /*Стилі для 1-ого блоку*/
+header {
+    text-align: center;
+    margin: 0 auto;
+    position: relative; /*Задаємо relative щоб потім накладати блоки на картинку*/
+}
+header img {
+    max-width: 100%;
+}
+#menu {            /*Блок з верхнім меню зміщений вниз*/
+    background: white;
+    position: absolute;
+    text-align: center;
+    top: 5px;
+    width: 100%;
+}
+#menu li{
+    float: left;
+    list-style-type:none;
+    margin-left: 2rem;
+}
+#menu li a{
+    color: black;
+    display: inline-block;
+    padding: 3px 0 10px;
+    text-decoration: none;
+}
+#menu li a.active{    /*Задаємо нижню полосу під першим меню*/
+    border-bottom: 2px solid green;
+}
+#menu li a:hover{
+    border-bottom: 2px solid green;
+}
+#menu menu{
+    display: inline-block;
+    font-family: Raleway, sans-serif;
+    margin: 0 0 -7px;
+}
+#menu span{        /*Стилі для основного напису ICONXLAB*/
+    font-size: 2rem;
+    font-family:  Lato-Light, sans-serif;
+}
+                /*Стилі для нижньої секції з текстом і кнопкою*/
+header section{
+    bottom: 2%;
+    color: white;
+    font-family:  Lato-Light, sans-serif; 
+    margin: 0 auot;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+header section div{ /*опускаємо блок з кнопкою*/
+    margin-top: 2%;
+}
+header section .round{    /*стилі для нижіх кругів*/
+    border: 1px solid white;
+    border-color: grey;
+    border-radius: 50%;
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+}
+.round.center{
+    border-color: grey white white grey;
+    margin: 0 10px;
+}
+header section p{
+    display: inline-block;
+    text-align: left;
+}
+header section a{            /*Стилі для центральної ссилки*/
+    background: transpared;
+    border: 1px solid white;
+    color: white;
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 3px 15px;
+    text-decoration: none;
+}
+
+                                /*Стилі для 2-го блоку*/
+
+#services{
+padding-bottom: 50px;
+}
+#services h1{
+    font-family: Lato-Hairline, sans-serif;
+    font-style: normal;
+    font-size: 1.5em;
+}
+#services p:first-child{     /*Стилі заголовку*/
+    border-top: 2px solid #39ca87;
+    border-bottom: 2px solid #39ca87;
+    display: inline-block;
+    font-family: Lato-Light, sans-serif;
+    font-size: 1.3em;
+    margin: 50px 46%;
+    padding: 1px 0;
+}
+#services > div:nth-child(2){    /* Сіра плашка*/
+    background: url(i/block2_back.gif);
+    height: 40px;
+}
+#services > div:nth-child(3){    /*Піднімаємо картинки на плашку*/
+    text-align: center;
+    margin-top: -55px;
+}
+#services div.round-img{    /*кругла рамка і тінь навколо картинок*/
+    background-color: white;
+    border: 4px solid #355479;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 10px white;
+    display: inline-block;
+    padding: 10px;
+}
+#services div.collum{        /*Шрифти та розмір центральних блоків*/
+    display: inline-block;
+    font-family: Raleway, sans-serif;
+    width: 255px;
+}
+#services div.collum p{
+    margin-bottom: 60px;        /*Задаємо відстань під параграфами*/
+    text-align: left;
+}
+#services div.collum.center{
+    margin: 0 5%;
+}
+#services div.shadow{        /*зелена полоска під блоками*/
+    background: rgba(0, 0, 0, 0) radial-gradient(#3fc08e, #fff) repeat scroll 0 0;
+    display: inline-block;
+    height:2px;
+    width: 100%
+}
+
+                        /*Стилі для 3-го блоку LATEST PROJECTS*/
+
+#projects{
+    background-color: #f0f2f3;
+    text-align: center;
+    padding-top: 40px;
+}
+#projects>div:first-child{        /*Заголовок блоку*/
+    border-top: 2px solid #39ca87;
+    border-bottom: 2px solid #39ca87;
+    display: inline-block;
+    font-family:  Lato-Light, sans-serif;
+    font-size: 1.5rem;
+    position:relative;
+}
+#projects div.trigle{        /*Трикутник під заголовком*/
+    border: 10px solid transparent;
+    border-top: 10px solid #39ca87;
+    position: absolute;
+    left: 45%;
+    width: 0px;
+}
+                /*Верхнє меню*/
+#projects menu{
+    display: inline-block;
+    padding-left: 0;
+}
+#projects menu li{
+    border-right: 1px solid #95a4b4;
+    float: left;
+    font-size: 0.8rem;
+    list-style-type:none;
+    padding: 0 0.5rem;        /*відстань між ссилками*/
+}
+#projects menu li.first{
+    padding-left: 0;
+}
+#projects menu li.last{
+     border-right: none;        /*прибираємо сіру полоску після останнього менню*/
+}
+#projects menu li a{
+    color: #95a4b4;
+    text-decoration: none;
+}
+#projects table{        /*Таблиця з картинками*/
+    padding:0;
+    border-spacing:0;
+    margin: 0 auto;
+    max-width: 100%;
+}
+#projects td{
+    padding: 0;    /*прибираємо вільне місце в комірках таблиці*/
+}
+#projects table a{                            /*Стилі ссилки*/
+    text-decoration: none;
+    color:black;
+    display: inline-block;
+    position: relative;
+}
+#projects img.main{         /*Розміри картинки підганяємо під таблицю*/
+    width: 100%;
+    height: 100%;
+    vertical-align: bottom;
+}
+
+#projects div.hover{                        /*Стилі для основного напівпрозорого блоку*/
+    background: rgba(84, 186, 149, 0.5);
+    bottom:0;
+    color: white;
+    height: 20%;
+    opacity: 0;    /*робимо блок прозорим*/
+    padding-left: 10%;        /*задаємо відступ зліва*/
+    position: absolute; 
+    width: 90%;        /*ширина блоку з урахуванням padding-left*/
+    text-align: left;
+    transition: all 1s linear 0.5s; 
+}
+#projects div.hover p{         /*Параграф всередині виринаючого блоку*/
+    font-family:  Lato-Light, sans-serif; 
+    font-size: 1.5rem;
+    margin:0;
+}
+#projects a:hover div.hover{    /*Робимо блок видимим при наведенні на ссилку*/
+    opacity:1;
+}
+
+                                /*Стилі для 4-го блоку ABOUT*/
+#about{
+    padding-top: 20px;
+    text-align: center;
+}
+#about>div:first-child{    /*Рамки і інші стилі для заголовка*/
+    border-top: 2px solid #39ca87;
+    border-bottom: 2px solid #39ca87;
+    display: inline-block;
+    font-family:  Lato-Light, sans-serif;
+    font-size: 1.5rem;
+    margin: 80px 0 100px 0;
+    position:relative;
+}
+#about div.trigle{            /*Трикутник знизу заголовка*/
+    border: 10px solid transparent;
+    border-top: 10px solid #39ca87;
+    position: absolute;
+    left: 45%;
+    width: 0px;
+}
+#about>div:nth-child(2){    /*Сіра плашка*/
+    background: url(i/block2_back.gif);
+    height: 40px;
+
+}
+#about h2{
+    font-family: Lato-Hairline, sans-serif;
+    font-style: normal;
+    font-size: 1.5em;
+}
+#about h2 span{
+    color:#39ca87;
+}
+#about div.collum{    /*Блоки з текстом*/
+    display: inline-block;
+    font-family: Raleway, sans-serif;
+    width: 255px;
+}
+#about div.collum p{
+    margin-bottom: 60px;
+    text-align: left;
+}
+#about div.collum.center{    /*Відступи між блоками*/
+    margin: 0 5%;
+}
+#about h2.paddown{    /*Вирівнюємо заголвки по одній лінії*/
+    margin-bottom: 48px;
+}
+#about>div:nth-child(3){
+    background: #f0f2f3;
+}
+#about div.round-img{    /*Сірий круг навколо картинки піднятий на верх*/
+    background: url(i/block2_back.gif) repeat;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: -100px;
+    padding: 15px;
+}
+#about div.round-img div{    /*Рамка навколо картинки*/
+    background: #fff;
+    border: 5px solid #355479;
+    border-radius: 50%;
+    display: inline-block;
+    height: 70px;
+    padding-top: 20px;
+    width: 90px;
+}
+
+
+                                /*Стилі для 5-го блоку OUR TEAM*/
+#our_team{
+    padding-bottom: 50px;
+    text-align: center;
+}
+#our_team>div:first-child{    /*Рамки і інші стилі для заголовка*/
+    border-top: 2px solid #39ca87;
+    border-bottom: 2px solid #39ca87;
+    display: inline-block;
+    font-family:  Lato-Light, sans-serif;
+    font-size: 1.5rem;
+    margin: 80px 0 100px 0;
+    position:relative;
+}
+#our_team div.trigle{            /*Трикутник знизу заголовка*/
+    border: 10px solid transparent;
+    border-top: 10px solid #39ca87;
+    position: absolute;
+    left: 45%;
+    width: 0px;
+}
+#our_team h3{
+    font-family: Lato-Hairline, sans-serif;
+    font-style: normal;
+    font-size: 1.5em;
+}
+#our_team h3 span{
+    color:#39ca87;
+}
+#our_team div.collum{    /*Блоки з текстом*/
+    display: inline-block;
+    font-family: Raleway, sans-serif;
+    width: 255px;
+}
+#our_team div.collum p{
+    margin-bottom: 60px;
+    text-align: left;
+}
+#our_team div.collum.center{    /*Відступи міх блоками*/
+    margin: 0 5%;
+}
+#our_team div.round-img{    /*Сірий круг навколо фото*/
+    background: url(i/block2_back.gif) repeat;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 15px;
+}
+#our_team div.shadow{            /*зелена полоска під блоками*/
+    background: rgba(0, 0, 0, 0) radial-gradient(#3fc08e, #fff) repeat scroll 0 0;
+    display: inline-block;
+    height:2px;
+    width: 100%
+}
+#our_team div.ref a{        /*Нижній блок з ссилками*/
+    height: 15px;
+    margin-right: 10px;
+    width: 15px;
+}
+
+
+                                /*Стилі для 6-го блоку LATEST PHOTOS*/
+#photos{
+    text-align: center;
+    padding-bottom: 100px;
+}
+#photos>div:first-child{    /*Рамки і інші стилі для заголовка*/
+    border-top: 2px solid #39ca87;
+    border-bottom: 2px solid #39ca87;
+    display: inline-block;
+    font-family:  Lato-Light, sans-serif;
+    font-size: 1.5rem;
+    margin: 80px 0 100px 0;
+    position:relative;
+}
+#photos div.trigle{            /*Трикутник знизу заголовка*/
+    border: 10px solid transparent;
+    border-top: 10px solid #39ca87;
+    position: absolute;
+    left: 45%;
+    width: 0px;
+}
+#photos table{
+    padding:0;
+    border-spacing:0;
+    max-width: 100%;
+}
+#photos a{                            /*Стилі ссилки*/
+    text-decoration: none;
+    color:black;
+    display: inline-block;
+    position: relative;
+}
+#photos td{
+    padding: 0;
+}
+#photos img.main{         /*Висоту картинки підганяємо під таблицю*/
+    height: 100%;
+    width: 100%;
+    vertical-align:bottom;
+}
+
+#photos div.hover{                        /*Стилі для основного напівпрозорого блоку*/
+    background: rgba(84, 186, 149, 0.5);
+    bottom:0;
+    color: white;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    transition: all 1s linear 0.5s; 
+}
+#photos a:hover div.hover{    /*Робимо блок видимим при наведенні на ссилку*/
+    opacity:1;
+}
+#photos div.hover div.border{            /*Задаємо білу лінію покругу*/
+    display:inline-block;
+    padding:10px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: 30% 28%;
+}
+#photos div.hover div.border.big{
+    margin: 40% 41%;
+}
+#photos div.hover div.border.long{
+    margin: 77% 30%;
+}
+#photos div.hover div.inside{            /*Стилі внутрішнього круга*/
+    display:inline-block;
+    padding: 15px;
+    background-color: green;
+    border-radius: 50%;
+    text-align: center;
+}
+
+
+
+                                        /*Стилі для 7-го блоку LATEST BLOGS*/
+#blogs{
+   text-align: center;
+}
+#greyback{
+    text-align: center;
+    background-color: #f0f2f3;
+}
+#greyback>div:first-child{    /*Рамки і інші стилі для заголовка*/
+    border-top: 2px solid #39ca87;
+    border-bottom: 2px solid #39ca87;
+    display: inline-block;
+    font-family:  Lato-Light, sans-serif;
+    font-size: 1.5rem;
+    margin: 80px 0 100px 0;
+    position:relative;
+}
+#greyback div.trigle{            /*Трикутник знизу заголовка*/
+    border: 10px solid transparent;
+    border-top: 10px solid #39ca87;
+    position: absolute;
+    left: 45%;
+    width: 0px;
+}
+#blogs a{                            /*Стилі ссилки*/
+    text-decoration: none;
+    color:black;
+    display: inline-block;
+    position: relative;
+}
+img.main{                    /*Висоту картинки підганяємо під таблицю*/
+    height:190px;;
+}
+td.left{
+    text-align: right;
+}
+td.center{
+    padding: 10px 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+div.hover{                        /*Стилі для основного напівпрозорого блоку*/
+    background: rgba(84, 186, 149, 0.5);
+    bottom:0;
+    color: white;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    transition: all 1s linear 0.5s; 
+}
+#blogs a:hover div.hover{    /*Робимо блок видимим при наведенні на ссилку*/
+    opacity:1;
+}
+div.hover div.border{            /*Задаємо білу лінію покругу*/
+    display:inline-block;
+    padding:10px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: 10% 45%;
+}
+div.hover div.inside{            /*Стилі внутрішнього круга*/
+    display:inline-block;
+    padding: 15px;
+    background-color: green;
+    border-radius: 50%;
+}
+
+
+
+
+                                /*Стилі для 8-го блоку CONTACTS*/
+#contact{
+   text-align: center;
+    padding-bottom: 30px;
+}
+#contact>div:first-child{    /*Рамки і інші стилі для заголовка*/
+    border-top: 2px solid #39ca87;
+    border-bottom: 2px solid #39ca87;
+    display: inline-block;
+    font-family:  Lato-Light, sans-serif;
+    font-size: 1.5rem;
+    margin: 80px 0 100px 0;
+    position:relative;
+}
+#contact div.trigle{            /*Трикутник знизу заголовка*/
+    border: 10px solid transparent;
+    border-top: 10px solid #39ca87;
+    position: absolute;
+    left: 45%;
+    width: 0px;
+}
+#contact iframe{
+    height: 500px;
+    width: 100%;
+}
+#contact > div:nth-child(4){    /* Сіра плашка*/
+    background: url(i/block2_back.gif);
+    height: 40px;
+}
+#contact div.collum{    /*Блоки з текстом*/
+    display: inline-block;
+    font-family: Raleway, sans-serif;
+    width: 255px;
+}
+#contact div.collum.center{    /*Відступи міх блоками*/
+    margin: 0 5%;
+}
+#contact div.round-img{    /*Сірий круг навколо фото*/
+    background: url(i/block2_back.gif) repeat;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 15px;
+}
+#contact > div:nth-child(5){
+    font-family:  Lato-Light, sans-serif;
+    margin-top: -55px;
+}
+#contact hr{
+    width: 70%;
+}
+#contact p.green{
+    color:#39ca87;
+}
+
+                                /*Стилі для форми відправки повідомлення*/
+#form{
+    background-color: #355479;
+    text-align: center;
+}
+#form table{
+    margin: 0 auto;
+}
+#form input{
+    border: none;
+}
+#form textarea{    /*Централь зона для вводу тексту*/
+    background-color: #547aa9;
+    border: none;
+    color: white;
+    height: 60px;
+    width: 600px;
+}
+#form input[type=email], input[type=text]{
+    height: 26px;
+}
+#form input[type=email]{
+    background-color: #547aa9;
+}
+#form input[type=submit]{
+    background-color: #39ca87;
+    border: medium none;
+    color: white;
+    height: 62px;
+    width: 130px;
+}
+
+
+                                        /*Підвал*/
+footer{
+    background: #355479;
+    margin: 1px 0;
+}
+footer p{        /*загальні стилі для параграфів*/
+    color:#8a95a1;
+    font-family: Raleway, sans-serif;
+    font-size: 0.8rem;
+}
+footer h4{
+    color: white;
+    font-family: Raleway, sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+footer input{    /*поле пошуку*/
+    background-color: #547aa9;
+    border: none;
+    margin-bottom: 40px;
+}
+footer #table{        /*вирівнюємо блоки з допомогою таблиці*/
+    display: table;
+    margin: 0 auto;
+}
+#table div{
+    display: table-cell;
+    padding-right: 40px;
+    width: 250px;
+}
+#table div:nth-child(4){                /*прибираємо відступ зправа для крайнього блоку*/
+    margin-right: 0;
+}
+footer #table>div:nth-child(3) td{ /*блок з твітами вирівнюємо по верху щоб картинки не падали*/
+    vertical-align: top;
+}
+footer #table>div:nth-child(3) p{ /*відступи між параграфами для блоку LATEST POST*/
+    margin: 0 0 30px 0;
+}
+#copyright{            /*Блок з копірайтом*/
+    background: #355479;
+    color: white;
+    font-family: Raleway, sans-serif;
+    font-size: 0.7rem;
+    padding: 10px 0;
+    text-align: center;
+}
